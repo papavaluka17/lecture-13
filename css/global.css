@@ -1,0 +1,394 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header .container, .s-2 .container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 50px 0;
+}
+
+@media (max-width: 1200px) {
+  .header .container {
+    width: 90%;
+  }
+}
+
+.header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header .wrapper > a {
+  font-size: 30px;
+  font-family: "The Nautigal", cursive;
+  color: black;
+}
+
+.header .wrapper > nav {
+  width: 500px;
+}
+
+.header .wrapper > nav > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header .wrapper > nav > ul > li > a {
+  color: black;
+  font-size: 14px;
+}
+
+.header .wrapper .burger-bars {
+  display: none;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .header .wrapper .burger-bars {
+    display: block;
+  }
+  .header .wrapper > nav {
+    display: none;
+  }
+}
+
+.s-1 {
+  margin-top: 30px;
+  background-image: url(https://www.euractiv.com/wp-content/uploads/sites/2/2018/06/dsggd-800x450.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.s-1 > h2 {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+
+.s-1 > h2::before {
+  content: "\261B";
+}
+
+.s-2 {
+  margin-top: 30px;
+}
+
+.s-2 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 1200px) {
+  .s-2 .container {
+    width: 90%;
+  }
+}
+
+.s-2 .container > div {
+  width: 300px;
+  height: 360px;
+  text-align: center;
+}
+
+.s-2 .container > div > img {
+  width: 100%;
+  border-radius: 10%;
+}
+
+.s-2 .container > div > h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: black;
+}
+
+.s-2 .container > div > p {
+  color: #203105;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 20px;
+}
+
+.s-2 .container > div > button {
+  border-radius: 100px;
+  margin-top: 15px;
+  background-color: cyan;
+}
+
+.s-2 .container > div > button:hover {
+  font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+  .s-2 .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+footer {
+  margin-top: 50px;
+  width: 100%;
+  padding: 30px 100px;
+  background-color: black;
+}
+
+footer .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .row .box:first-child {
+  width: 300px;
+}
+
+footer .row .box > h2 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+footer .row .box > p {
+  color: white;
+  font-size: 14px;
+}
+
+footer .row .box > ul > li {
+  cursor: pointer;
+  color: blue;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+footer .row .box > ul > li:hover {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  footer .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .row > .box {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=global.css.map */
